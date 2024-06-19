@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: rgba(248, 148, 231, 0.674);
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.gift {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.gift svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  animation: scaleUp 0.5s ease-in-out;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close-btn {
+  color: #ff0000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.love-note {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.heart {
+  color: red;
+}
+.additional-note {
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: #000000;
+  padding: 0 10px;
+}
+
+
